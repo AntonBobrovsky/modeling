@@ -34,7 +34,7 @@ class QueuingSystem:
             raise ValueError("Incorrect type !")
         return x
 
-    def compute(self, d_type_tau, d_type_sigma, math_exp_step):
+    def calculate(self, d_type_tau, d_type_sigma, math_exp_step):
         res_full = []
         math_exp_tau = math_exp_step
 
@@ -68,7 +68,7 @@ class QueuingSystem:
         for i in types:
             for j in types:
 
-                result = self.compute(i, j, step)
+                result = self.calculate(i, j, step)
                 file = open(types[i] + "-" + types[j] + ".out", 'w')
                 n_str = len(result[0])
                 count = 0.0
