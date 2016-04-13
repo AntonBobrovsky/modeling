@@ -82,7 +82,7 @@ class MarkovChains:
 
         for i in range(self.matrix_size):
             file_history_event.write(str(i + 1) + " " + repr(history_event[i]) + "\n")
-            file_history_x.write(str(i + 1) + " " + repr(history_event[i]) + "\n")
+            file_history_x.write(str(i + 1) + " " + repr(history_x[i]) + "\n")
         for i in range(500):
             file_ksi.write(str(i + 1) + ' ' + repr(array_ksi[i]) + '\n')
 
